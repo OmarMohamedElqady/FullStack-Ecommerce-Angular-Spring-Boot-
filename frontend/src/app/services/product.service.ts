@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Product } from '../common/product';
 import { ProductCategory } from '../common/product-category';
+import { environment } from '../../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root',
@@ -14,8 +15,11 @@ export class ProductService {
     return this.httpClient.get<Product>(productUrl);
   }
   // private baseUrl = 'http://localhost:8080/api/products?size=100';   // ==> حل بسيط عشان نخليه يرجع 100 كارد
-  private baseUrl = 'http://localhost:8080/api/products';
-  private categoryUrl = 'http://localhost:8080/api/product-category';
+  // private baseUrl = 'http://localhost:8080/api/products';
+  // private categoryUrl = 'http://localhost:8080/api/product-category';
+
+  private baseUrl = `${environment.shopApiUrl}/products`;
+  private categoryUrl = `${environment.shopApiUrl}/product-category`;
 
   constructor(private httpClient: HttpClient) {}
 

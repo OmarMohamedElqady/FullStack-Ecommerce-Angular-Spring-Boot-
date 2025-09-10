@@ -223,6 +223,7 @@ input.au-input.au-input-xl{
     margin-right:15px
 }
 
+
 .au-input{
     line-height:43px;
     border:1px solid #e5e5e5;
@@ -237,6 +238,16 @@ input.au-input.au-input-xl{
     -moz-transition:all .5s ease;
     transition:all .5s ease
 }
+
+.product-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* لضمان ملء الإطار بدون تشويه */
+}
+
+
+
+
 
 .cart-area.d-n{
     display:block
@@ -774,7 +785,8 @@ footer{
     background:#232324;
     z-index:1;
     position:relative;
-    text-align:center
+    text-align:center;
+    padding-bottom: 0.2px;
 }
 footer li a{
     color:#313131;
