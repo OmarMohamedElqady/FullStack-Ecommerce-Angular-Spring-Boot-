@@ -48,6 +48,8 @@ It follows a **RESTful API architecture** with secure and scalable design princi
 - Layered architecture: Controller → Service → Repository → Entity
 - Exception handling and validations
 - Ready for containerization with Docker
+- Payment gateway integration
+
 
 ### Frontend
 - Responsive UI with Angular & Bootstrap
@@ -61,7 +63,21 @@ It follows a **RESTful API architecture** with secure and scalable design princi
 
 ## 📂 Project Structure
 
-
+FullStack-Ecommerce-Angular-Spring-Boot-/
+│
+├── backend/ # Spring Boot Backend
+│ ├── src/main/java # Entities, Controllers, Services, Repositories
+│ ├── src/main/resources
+│ │ └── application.properties
+│ └── pom.xml
+│
+├── frontend/ # Angular Frontend
+│ ├── src/app # Components, Services, Models
+│ ├── src/assets
+│ └── angular.json
+│
+├── Dockerfile
+└── README.md
 
 ---
 
@@ -86,10 +102,18 @@ cd frontend
 npm install
 ng serve --open
 
+## 📌 Future Improvements
+
+User authentication & authorization (JWT)
+
+Admin dashboard for product management
+
+Order history & tracking
+
+Unit & integration testing
 
 ## 👨‍💻Author
 
 Omar Mohamed Elqady
 Full-Stack Developer | Angular • Spring Boot • SQL/NoSQL
-LinkedIn
 
