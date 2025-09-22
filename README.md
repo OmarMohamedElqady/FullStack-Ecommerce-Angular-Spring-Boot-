@@ -80,8 +80,7 @@ It follows a **RESTful API architecture** with secure and scalable design princi
 cd backend
 # Configure MySQL in application.properties
 mvn spring-boot:run
----
-
+```
 ### frontend Setup
 cd frontend
 npm install
