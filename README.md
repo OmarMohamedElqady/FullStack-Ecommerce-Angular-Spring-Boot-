@@ -62,6 +62,7 @@ It follows a **RESTful API architecture** with secure and scalable design princi
 ---
 
 ## 📂 Project Structure
+```bash
 
 FullStack-Ecommerce-Angular-Spring-Boot-/
 │
@@ -78,7 +79,7 @@ FullStack-Ecommerce-Angular-Spring-Boot-/
 │
 ├── Dockerfile
 └── README.md
-
+```
 ---
 
 ## 🚀 Getting Started
@@ -98,9 +99,11 @@ cd backend
 mvn spring-boot:run
 ```
 ### frontend Setup
+```bash
 cd frontend
 npm install
 ng serve --open
+```
 
 ## 📌 Future Improvements
 
@@ -114,6 +117,6 @@ Unit & integration testing
 
 ## 👨‍💻Author
 
-Omar Mohamed Elqady
+#### Omar Mohamed Elqady
 Full-Stack Developer | Angular • Spring Boot • SQL/NoSQL
 
